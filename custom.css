@@ -1,0 +1,25 @@
+body {
+  font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, Arial, sans-serif;
+  font-weight: 300;
+}
+section,
+section .js-column-header {
+  transition: ease-in-out 0.25s !important;
+}
+section .js-column-header {
+  z-index: 300;
+}
+.js-card-container,
+.js-media,
+.media-image-container {
+  will-change: height;
+  transition-duration: 0.2s;
+  transition-property: height transform;
+  transition-timing-function: cubic-bezier(0.18, 0.91, 0.38, 1.1);
+  overflow: hidden;
+}
+.js-card-container:hover,
+.js-media:hover,
+.media-image-container:hover {
+  transform: scale(1.03);
+}
