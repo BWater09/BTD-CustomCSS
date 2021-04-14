@@ -16,10 +16,15 @@ section .js-column-header {
   transition-duration: 0.2s;
   transition-property: height transform;
   transition-timing-function: cubic-bezier(0.18, 0.91, 0.38, 1.1);
+  animation: fadeIn 0.2s cubic-bezier(0.18, 0.91, 0.38, 1.1) normal;
   overflow: hidden;
 }
 .js-card-container:hover,
 .js-media:hover,
 .media-image-container:hover {
   transform: scale(1.03);
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
